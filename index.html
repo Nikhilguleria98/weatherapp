@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="flex justify-center items-center  ">
+<div class="container border w-96 h-96  rounded-2xl bg-blue-400 mt-32">
+    <div class="search flex justify-center gap-4 mt-4">
+        <input type="text" class="border rounded-full h-11 p-2 outline-none" placeholder="Enter city name">
+        <button class=" btn border h-12 w-12 flex justify-center items-center rounded-full bg-white"><img src="search.png" alt="" class="h-4"></button>
+    </div>
+<div class="weather">
+<div class="weather-img h-32 flex justify-center">
+<img src="clear.png" alt="" class="weather-img" >
+</div>
+ <div class="flex justify-center text-white font-semibold text-5xl">
+    <p class="temp">22°c </p>
+</div>
+<div class="city flex justify-center text-white font-semibold text-2xl">
+    <p>New Delhi</p>
+</div>
+
+
+<div class="flex justify-center ">
+<div class="flex ml-8 gap-2 text-white mt-10">
+<div>
+    <img src="humidity.png" alt="" class="h-9 mt-2 flex flex-col ">
+</div>
+<div>
+  <p class="humidity ">50%</p>
+  <p class=" flex-col">humidity</p>
+</div>
+</div>
+
+<div class="flex ml-8 gap-2 text-white mt-10 ">
+    <div>
+        <img src="wind.png" alt="" class="h-9 mt-2 flex flex-col ">
+    </div>
+    <div>
+      <p class="wind">20 km/h</p>
+      <p class="flex flex-col">wind speed</p>
+    </div>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
